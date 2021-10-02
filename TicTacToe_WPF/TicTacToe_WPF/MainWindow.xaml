@@ -1,0 +1,59 @@
+﻿<Window x:Class="TicTacToe_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToe_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="450">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="20">
+            <Label x:Name="LabelStatus">
+                Game in Progress
+            </Label>
+            <Grid Height="300" Width="300">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="Field1" Click="Field1_Click">
+
+                </Button>
+                <Button x:Name="Field2" Grid.Column="1" Click="Field2_Click">
+
+                </Button>
+                <Button x:Name="Field3" Grid.Column="2" Click="Field3_Click">
+
+                </Button>
+                <Button x:Name="Field4" Grid.Row="1" Click="Field4_Click">
+
+                </Button>
+                <Button x:Name="Field5" Grid.Row="1" Grid.Column="1" Click="Field5_Click">
+
+                </Button>
+                <Button x:Name="Field6" Grid.Row="1" Grid.Column="2" Click="Field6_Click">
+
+                </Button>
+                <Button x:Name="Field7" Grid.Row="2" Click="Field7_Click">
+
+                </Button>
+                <Button x:Name="Field8" Grid.Row="2" Grid.Column="1" Click="Field8_Click">
+
+                </Button>
+                <Button x:Name="Field9" Grid.Row="2" Grid.Column="2" Click="Field9_Click">
+
+                </Button>
+            </Grid>
+            <Label x:Name="LabelTurns"/>
+            <Button x:Name="ButtonReset" Visibility="Collapsed" Click="ButtonReset_Click">
+                Reset
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
